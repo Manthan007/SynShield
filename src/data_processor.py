@@ -49,7 +49,7 @@ filepath_ohe = 'data/processed/ohe.joblib'
 os.makedirs(os.path.dirname(filepath_scaler), exist_ok=True)
 joblib.dump(scaler, filepath_scaler)
 os.makedirs(os.path.dirname(filepath_ohe), exist_ok=True)
-joblib.dump(scaler, filepath_ohe)
+joblib.dump(ohe, filepath_ohe)
 
 # dataframe to tensors
 X_train_tensor = torch.tensor(X_train.to_numpy(), dtype=torch.float32)
