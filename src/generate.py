@@ -61,4 +61,4 @@ synthetic_adult = pd.concat([num_df_converted, cat_df_converted], axis=1)
 os.makedirs("data/synthetic", exist_ok=True)
 synthetic_adult.to_csv("data/synthetic/synthetic_adult.csv")
 # Save the raw tensor for the Attacker
-torch.save(x, "data/synthetic/x_synthetic.pt")
+torch.save(x, "data/synthetic/x_synthetic.pt") 
